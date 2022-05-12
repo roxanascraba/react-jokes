@@ -8,7 +8,6 @@ const Field = ({ label, id, value, onChange }) => {
         className="input"
         id={id}
         value={value}
-        // onChange={e => onChange(e.target.value.replace(/[^A-Z ]/ig,'').replace(/ o /g,' '))}
         onChange={e => onChange(e.target.value)}
       />
     </div>

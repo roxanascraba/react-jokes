@@ -6,9 +6,6 @@ import Languages from "./Languages";
 const vowelsArray = ['a', 'e', 'i', 'o', 'u', 'å', 'ä', 'ö', 'A', 'E', 'I', 'O', 'U', 'Å', 'Ä', 'Ö'];
 
 export const charIsLetter = (char) => {
-  // if (typeof char !== 'string') {
-  //   return false;
-  // }
   return /^[a-zA-Z]+$/.test(char);
 };
 
@@ -21,14 +18,6 @@ export const translateToRovare = (text) => {
   }
 
   for (let i = 0; i < textLength; i++) {
-    // Refactor this!
-    // if (!charIsLetter(text[i])) {
-    //   translatedLetter = text[i];
-    // } else if (vowelsArray.includes(text[i])){ 
-    //   translatedLetter = text[i];
-    // } else {
-    //   translatedLetter = text[i].concat("o", text[i]); 
-    // }
 
     translatedLetter = text[i];
 
@@ -125,10 +114,6 @@ const Translator = () => {
                   language={language} 
                   onLanguageChange={setLanguage} 
                 />
-                {/* <button 
-                  onClick={handleSubmit}
-                  className="button submit">Translate
-                </button> */}
               </form>
             
             </div>

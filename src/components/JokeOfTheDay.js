@@ -71,7 +71,7 @@ const JokeOfTheDay = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default JokeOfTheDay;
